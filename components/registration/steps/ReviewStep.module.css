@@ -1,0 +1,95 @@
+.block {
+  margin-bottom: 22px;
+}
+
+.blockTitle {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin: 0 0 12px;
+}
+
+.rows {
+  margin: 0;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 15px;
+}
+
+.row dt {
+  color: var(--text-muted);
+}
+
+.row dd {
+  margin: 0;
+  color: var(--text);
+  font-weight: 600;
+  text-align: end;
+}
+
+.kids {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.kid {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border);
+}
+
+.kidName {
+  font-weight: 700;
+  color: var(--text);
+}
+
+.kidMeta {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.totals {
+  margin-top: 24px;
+  padding: 18px 20px;
+  border-radius: 16px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: var(--text-muted);
+  padding: 4px 0;
+}
+
+.accent {
+  color: var(--green-fg);
+  font-weight: 600;
+}
+
+.grandTotal {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border-strong);
+  font-family: var(--font-heading), sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--text);
+}

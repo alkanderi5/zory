@@ -1,0 +1,21 @@
+.section {
+  padding-block: clamp(48px, 8vw, 84px);
+}
+
+.head {
+  margin-bottom: 34px;
+}
+
+.title {
+  font-size: clamp(28px, 5vw, 34px);
+  font-weight: 800;
+  margin: 0 0 8px;
+  color: var(--text);
+}
+
+.subtitle {
+  font-size: clamp(15px, 2.4vw, 16px);
+  color: var(--text-muted);
+  max-width: 52ch;
+  margin: 0;
+}

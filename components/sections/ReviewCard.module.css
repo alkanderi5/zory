@@ -1,0 +1,27 @@
+.card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 18px;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--text);
+  margin-right: auto;
+}
+
+.text {
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.55;
+  margin: 0;
+}

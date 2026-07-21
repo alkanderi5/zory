@@ -1,0 +1,10 @@
+.stars {
+  display: inline-flex;
+  color: #f6c454;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+
+.empty {
+  color: rgba(246, 196, 84, 0.25);
+}

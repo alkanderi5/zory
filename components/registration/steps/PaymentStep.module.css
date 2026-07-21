@@ -1,0 +1,83 @@
+.methods {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.method {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 10px;
+  border-radius: 14px;
+  border: 1.5px solid var(--border-strong);
+  background: var(--surface);
+  color: var(--text-muted);
+  font-weight: 700;
+  font-size: 13px;
+  text-align: center;
+  transition:
+    border-color 0.15s ease,
+    background 0.15s ease,
+    color 0.15s ease;
+}
+
+.method:hover {
+  border-color: rgba(43, 127, 255, 0.5);
+}
+
+.methodActive {
+  border-color: var(--brand);
+  background: var(--brand-soft);
+  color: var(--text);
+}
+
+.methodIcon {
+  font-size: 22px;
+}
+
+.cardNote {
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 13.5px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.terms {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+.term {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 14px;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.term input {
+  width: 20px;
+  height: 20px;
+  margin-top: 1px;
+  accent-color: var(--brand);
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .methods {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,88 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 26px;
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border);
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.name {
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--text);
+  margin: 0;
+}
+
+.role {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--brand-600);
+  margin: 2px 0 0;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.cv {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.cv li {
+  position: relative;
+  padding-inline-start: 20px;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.cv li::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: 0;
+  top: 7px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--brand);
+}
+
+.quote {
+  margin: 0;
+  padding: 16px 18px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border);
+}
+
+.quote p {
+  font-size: 14px;
+  font-style: italic;
+  color: var(--text-muted);
+  margin: 0 0 8px;
+  line-height: 1.55;
+}
+
+.quote cite {
+  font-size: 13px;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--text);
+}

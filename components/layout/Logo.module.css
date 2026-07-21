@@ -1,0 +1,41 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: linear-gradient(150deg, var(--brand), var(--brand-900));
+  box-shadow: 0 8px 20px rgba(43, 127, 255, 0.35);
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+
+.text strong {
+  font-family: var(--font-heading), sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  color: var(--text);
+}
+
+.text small {
+  font-size: 12px;
+  color: var(--text-dim);
+}
+
+@media (max-width: 480px) {
+  .text small {
+    display: none;
+  }
+}
